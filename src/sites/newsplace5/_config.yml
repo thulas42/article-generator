@@ -1,0 +1,7 @@
+title: "newsplace5 - Latest News"
+description: "Stay updated with the latest news from around the world."
+baseurl: "/"
+url: "http://newsplace5.com"
+markdown: kramdown
+paginate: 5
+paginate_path: "/page:num/"

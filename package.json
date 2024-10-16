@@ -1,0 +1,32 @@
+{
+  "name": "news-website-generator",
+  "version": "1.0.0",
+  "description": "Automate the generation and deployment of news websites with Jekyll.",
+  "main": "src/articles/generateArticles.js",
+  "scripts": {
+    "generate:articles": "node src/articles/generateArticles.js",
+    "deploy": "node src/deploy/deploySites.js",
+    "monitor": "node src/monitor/monitorSites.js",
+    "start": "npm run generate:articles && npm run deploy && npm run monitor"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^10.0.0",
+    "fs": "0.0.1-security",
+    "netlify-cli": "^8.0.0",
+    "nodemailer": "^6.6.3",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "keywords": [
+    "news",
+    "website",
+    "automation",
+    "jekyll",
+    "node"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
